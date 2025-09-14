@@ -11,7 +11,7 @@ st.markdown("Helping project managers understand technical concepts — in plain
 page = st.sidebar.radio("Navigate", ["Concept Explorer", "GPT Q&A"])
 
 # Load concept data
-DATA_PATH = os.path.join("data", "concepts.json")
+DATA_PATH = "concepts.json"
 with open(DATA_PATH, "r") as f:
     concepts = json.load(f)
 
@@ -71,3 +71,4 @@ elif page == "GPT Q&A":
     st.header("🤖 Ask the Assistant")
     st.markdown("This feature will allow you to ask technical questions and get GPT-powered answers.")
     st.info("Coming soon: live GPT answers")
+
