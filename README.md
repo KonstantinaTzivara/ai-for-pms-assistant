@@ -13,7 +13,6 @@ This is my personal project to showcase:
 - AI integration with GPT models
 
 
-
 🔍 Demo
 
 📹 [Watch Demo Video](#)  
@@ -28,16 +27,6 @@ I noticed that many PMs struggle to follow technical discussions or ask the righ
 - Understand concepts **on demand**
 - See how tech terms show up **in real projects**
 - Build confidence and bridge the gap with developers
-
----
-
-## ⚙️ Tech Stack
-
-- **Frontend**: Streamlit
-- **Backend**: Python
-- **AI**: Azure OpenAI / OpenAI GPT-4o
-- **Docs**: Confluence + Jira (Agile project setup)
-
 
 
 💡 What It Does (MVP)
@@ -55,7 +44,6 @@ Built using:
 - `JSON` file for data structure (scalable for new concepts)
 - Clean, PM-first UX with clarity and focus
 
----
 
  🛠️ Tech Stack
 
@@ -64,7 +52,7 @@ Built using:
 - Language: **Python**
 - Planning: Jira + Confluence (linked below)
 
----
+
 
  📷 Demo
 
