@@ -1,0 +1,125 @@
+{
+  "api": {
+    "term": "API",
+    "aliases": ["api", "API", "application programming interface"],
+    "definition": "An API (Application Programming Interface) lets two systems talk to each other. It defines how a user or system can request or send data.",
+    "project_use": "Used when building integrations between apps or services (e.g., frontend talks to backend).",
+    "pm_tip": "If your app needs to talk to another system, you'll probably need an API. Understand who owns it and how it's authenticated.",
+    "metaphor": "Think of an API like a restaurant menu. You (the user) choose from the menu (API) and the kitchen (backend) prepares what you asked for.",
+    "links": [
+      ["IBM : What is an API", "https://www.ibm.com/think/topics/api"],
+      ["AWS : What is an API?", "https://aws.amazon.com/what-is/api/"]
+    ]
+  },
+  "load balancer": {
+    "term": "Load Balancer",
+    "aliases": ["load balancer", "load balancing", "lb"],
+    "definition": "A Load Balancer distributes traffic across multiple servers so that no single one gets overwhelmed.",
+    "project_use": "Used in cloud apps to handle traffic smoothly and improve system reliability and uptime.",
+    "pm_tip": "Ask about this when you hear discussions on scalability, downtime, or microservices.",
+    "metaphor": "Like a traffic cop guiding cars to different lanes so that no road gets blocked.",
+    "links": [
+      ["AWS : Load Balancing", "https://aws.amazon.com/elasticloadbalancing/"],
+      ["Azure : Load Balancer Overview", "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview"]
+    ]
+  },
+
+"ci/cd pipeline": {
+  "term": "CI/CD Pipeline",
+  "aliases": ["ci/cd", "cicd", "ci cd", "ci pipeline", "continuous integration"],
+  "definition": "CI/CD stands for Continuous Integration and Continuous Deployment. It's a way to automatically test, build, and release software faster and more reliably.",
+  "project_use": "Used in software teams to deliver code changes frequently and safely. It catches bugs early and speeds up release cycles.",
+  "pm_tip": "Ask if CI/CD is in place when discussing deployments. It impacts how fast features go live and how risky rollouts are.",
+  "metaphor": "Like an assembly line for software: code goes in one end, and fully tested features come out the other automatically.",
+  "links": [
+    ["Atlassian: What is CI/CD?", "https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd"],
+    ["AWS CI/CD Pipeline", "https://aws.amazon.com/devops/continuous-delivery/"]
+  ]
+}
+,
+  "microservices": {
+    "term": "Microservices",
+    "aliases": ["microservices", "microservice architecture", "micro service"],
+    "definition": "Microservices is an architectural style where an application is built as a collection of small, independent services that communicate over APIs.",
+    "project_use": "Used to build scalable and maintainable applications. Each service can be developed, deployed, and scaled independently.",
+    "pm_tip": "Ask about microservices when discussing architecture. It affects team structure, deployment strategies, and system complexity.",
+    "metaphor": "Like a team of specialists: each person (service) has a specific role and can work independently, but they all contribute to the overall project (application).",
+    "links": [
+      ["Martin Fowler: Microservices", "https://martinfowler.com/articles/microservices.html"],
+      ["AWS: Microservices on AWS", "https://aws.amazon.com/microservices/"]
+    ]
+  },
+  "database": {
+    "term": "Database",
+    "aliases": ["database", "db", "sql", "nosql"],
+    "definition": "A database is an organized collection of data that can be easily accessed, managed, and updated.",
+    "project_use": "Used to store and retrieve data for applications, such as user information, transactions, or content.",
+    "pm_tip": "Understand what type of database is being used (SQL vs NoSQL) and how it impacts data structure and scalability.",
+    "metaphor": "Think of a database like a digital filing cabinet where information is stored in an organized way for easy retrieval.",
+    "links": [
+      ["Oracle: What is a Database?", "https://www.oracle.com/database/what-is-database/"],
+      ["MongoDB: Database Basics", "https://www.mongodb.com/basics"],
+      ["Microsoft : What is SQL Database?", "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-sql-database"]
+    ]
+  },
+  "cloud computing": {
+  "term": "Cloud Computing",
+  "aliases": ["cloud", "cloud services", "cloud computing"],
+  "definition": "Cloud computing is the delivery of computing services (like servers, storage, databases, networking, software) over the internet 'the cloud'.",
+  "project_use": "Enables teams to scale apps, deploy faster, and avoid managing physical infrastructure. Common in modern web and mobile apps.",
+  "pm_tip": "Clarify which cloud provider is used (AWS, Azure, GCP), cost structure, SLAs, and data location for compliance.",
+  "metaphor": "Like renting a car instead of owning one — you get flexibility without the maintenance hassle.",
+  "links": [
+    ["Azure: What is Cloud Computing?", "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing/"],
+    ["AWS Cloud Explained", "https://aws.amazon.com/what-is-cloud-computing/"]
+  ]
+},
+"artificial intelligence": {
+  "term": "Artificial Intelligence (AI)",
+  "aliases": ["ai", "AI", "artificial intelligence"],
+  "definition": "AI refers to systems or machines that simulate human intelligence to perform tasks like decision making, predictions, or language understanding.",
+  "project_use": "Used in recommendation systems, automation, fraud detection, chatbots, and data analysis. It needs quality data and clear goals.",
+  "pm_tip": "Clarify what type of AI is being used (ML, NLP, rules-based), and set realistic expectations. AI is powerful but not magic.",
+  "metaphor": "Like hiring a very fast intern: it can do amazing things — but only if you train it well and give it the right inputs.",
+  "links": [
+    ["IBM: What is AI?", "https://www.ibm.com/think/topics/artificial-intelligence"],
+    ["Google : What is Artificial Intelligence (AI)?", "https://cloud.google.com/learn/what-is-artificial-intelligence"]
+  ]
+},
+  "frontend": {
+    "term": "Frontend",
+    "aliases": ["frontend", "front", "front end", "front-end"],
+    "definition": "The frontend is the part of a web application that users interact with directly. It includes everything they see and experience in their browser.",
+    "project_use": "Used to create the user interface (UI) and user experience (UX) of web apps. Built with HTML, CSS, and JavaScript.",
+    "pm_tip": "Ask about frontend frameworks (React, Angular, Vue) and how they impact development speed and capabilities.",
+    "metaphor": "Think of the frontend like the storefront of a shop  it's what customers see and use to interact with your business.",
+    "links": [
+      ["Frontend Masters: What Does a Front-End Developer Do?", "https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html"],
+      ["FreeCodeCamp: What is Frontend Development?", "https://www.freecodecamp.org/news/what-is-front-end-development/"]
+    ]
+  },
+  "backend": {
+    "term": "Backend",
+    "aliases": ["backend", "back end", "back-end", "server-side"],
+    "definition": "The backend is the server-side of a web application. It handles data storage, business logic, and communication with the frontend.",
+    "project_use": "Used to manage databases, user authentication, and server logic. Built with languages like Python, Java, Ruby, or Node.js.",
+    "pm_tip": "Understand the backend architecture (monolith vs microservices) and how it affects scalability and maintenance.",
+    "metaphor": "Think of the backend like the kitchen of a restaurant it's where all the preparation happens to serve the customers (frontend).",
+    "links": [
+      ["MDN Web Docs: Backend", "https://developer.mozilla.org/en-US/docs/Learn/Server-side"],
+      ["Codecademy: What is Back-End Architecture?", "https://www.codecademy.com/article/what-is-back-end-architecture"]
+    ]
+  },
+ "devops": {
+  "term": "DevOps",
+  "aliases": ["devops", "Dev Ops", "dev ops"],
+  "definition": "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and deliver high-quality software continuously.",
+  "project_use": "Used to improve collaboration between development and operations teams, automate workflows, and ensure reliable deployments.",
+  "pm_tip": "Ask about DevOps tools (Jenkins, Docker, Kubernetes) and processes in place. It impacts release speed and system reliability.",
+  "metaphor": "Like a well-coordinated pit crew in Formula 1 development is the driver, operations is the crew. If they work in sync, the car (product) gets back on the track faster, safer, and with fewer errors.",
+  "links": [
+    ["Atlassian: What is DevOps?", "https://www.atlassian.com/devops"],
+    ["Microsoft Azure DevOps", "https://azure.microsoft.com/en-us/solutions/devops/"]
+  ]
+}
+}
