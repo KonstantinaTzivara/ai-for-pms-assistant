@@ -1,95 +1,86 @@
 [![Streamlit App](https://img.shields.io/badge/Live%20App-Streamlit-purple?logo=streamlit)](https://ai-for-pms-assistant-ascqbepwymm6szh5jobz82.streamlit.app/)
 
-ai-for-pms-assistant
-A practical AI-powered tool that helps project managers understand tech concepts in context
- AI for PMs Assistant
+# 🧠 AI for PMs Assistant
 
-👩‍💼 What It Is
+A practical, AI-powered tool that helps **project managers** understand technical concepts in context.
 
-AI for PMs is a simple, AI-powered tool designed to help **non-technical project managers** understand complex tech concepts — like APIs, cloud, or machine learning — in **plain English and real project context**.
+---
 
-This is my personal project to showcase:
-- Technical thinking
-- Project management planning (Jira + Confluence)
-- Usability for real-world SaaS/consulting roles
-- AI integration with GPT models
+## 👩‍💼 What It Is
 
+AI for PMs is a lightweight learning assistant designed for **non-technical project managers** who want to make sense of technical terms like `APIs`, `cloud`, or `DevOps` — without drowning in jargon.
 
-🔍 Demo
+It blends **static explanations** and **on-demand Q&A**, all tailored for real-world project environments.
 
-🌐 [Live App on Streamlit Cloud](https://ai-for-pms-assistant-ascqbepwymm6szh5jobz82.streamlit.app/)
+This is a personal project to showcase:
+- Technical understanding
+- Realistic feature planning (Jira + Confluence)
+- AI integration (OpenAI GPT models)
+- Practical PM tooling in SaaS/consulting environments
+
+---
+
+## 🔍 Try It Live
+
+🌐 [Live App on Streamlit Cloud](https://ai-for-pms-assistant-ascqbepwymm6szh5jobz82.streamlit.app/)  
 📝 [Confluence Page](#)  
-🗂️ [Jira Backlog (sample board)](#)
+🗂️ [Jira Board / Backlog](#)
 
-(*Links will be updated as I build it*)
+---
 
- 🧠 Why I Built This
+## 🧠 Features
 
-I noticed that many PMs struggle to follow technical discussions or ask the right questions. This tool helps them:
-- Understand concepts **on demand**
-- See how tech terms show up **in real projects**
-- Build confidence and bridge the gap with developers
+### ✅ Concept Explorer (Static)
 
+Search for terms like `API Gateway`, `CI/CD`, or `Load Balancer` and get:
 
-💡 What It Does (MVP)
-
-✅ Concept Explorer  
-Search tech terms like `API` or `Load Balancer` and see:
-- A short, plain-English definition
-- How it appears in real projects
-- What a PM should ask or know
+- A clear, simple explanation
+- How the term appears in real projects
+- What a PM should know or ask
 - A metaphor to make it stick
-- Links to trusted documentation (AWS, MDN, etc.)
+- Links to trusted docs (AWS, MDN, Azure, etc.)
 
-Built using:
-- `Streamlit` for frontend
-- `JSON` file for data structure (scalable for new concepts)
-- Clean, PM-first UX with clarity and focus
-
-
- 🛠️ Tech Stack
-
-- Frontend: **Streamlit**
-- Data: **JSON**
-- Language: **Python**
-- Planning: Jira + Confluence (linked below)
-
-
-
- 📷 Demo
-
-🎥 Coming soon: Loom video walkthrough
+💡 Built with:
+- `Streamlit` frontend
+- `JSON` concept file (scalable)
+- PM-friendly, clean UI
 
 ---
 
-## 🔐 GPT Q&A Module (New Feature)
+### 🔐 GPT Q&A Module
 
-This assistant helps project managers understand technical concepts using GPT-3.5.
+Ask any tech question and get a GPT-powered answer designed for PMs.
 
-Access is password-protected. Each password allows **up to 10 GPT queries**.
+✅ Features:
+- Free-text input (e.g. *What is an API Gateway?*)
+- Project-focused GPT response (short, clear, structured)
+- Password protection to limit usage
+- Token quota per password (configurable)
 
-📌 To test the assistant:
-- Go to the **GPT Q&A** page
-- Enter a temporary password (provided on request)
-- Start asking questions
-
-Note: The `allowed_passwords.json` file is **excluded from the repo** for security reasons.
-
----
+⚠️ Passwords are stored in `secrets.toml` for security.  
+The `allowed_passwords.json` approach has been **replaced** with a secrets-based method (works better on Streamlit Cloud).
 
 ---
 
- 📁 File Structure
+## 🔧 Tech Stack
+
+- **Frontend**: Streamlit
+- **Language**: Python
+- **Data**: JSON (concept content)
+- **AI Backend**: OpenAI `gpt-3.5-turbo`
+- **Planning**: Jira + Confluence
+- **Hosting**: Streamlit Cloud
+
+---
+
+## 📁 File Structure
 
 ```bash
 📂 ai-for-pms-assistant
 ├── app.py
 ├── data/
 │   └── concepts.json
+├── .streamlit/
+│   └── secrets.toml (not committed)
 ├── requirements.txt
-├── .env (not committed)
-
-
- 📃 License
-
-MIT License – free to use, modify, or build on!
+├── README.md
