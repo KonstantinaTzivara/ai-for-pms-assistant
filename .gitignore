@@ -1,3 +1,4 @@
 .env
 __pycache__/
 data/allowed_passwords.json
+.streamlit/secrets.toml

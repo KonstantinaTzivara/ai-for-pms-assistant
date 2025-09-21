@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import json
 from dotenv import load_dotenv
+import openai
 from openai import OpenAI
 
 
@@ -140,24 +141,30 @@ elif page == "GPT Q&A":
     st.markdown("Ask a question about tech terms, software concepts, or AI topics.")
 
     # --- Auth check
+    allowed_passwords = st.secrets["passwords"]
+    # --- Initialize session state variables if missing
     if "authenticated" not in st.session_state:
         st.session_state["authenticated"] = False
+    if "password" not in st.session_state:
         st.session_state["password"] = ""
+    if "quota_remaining" not in st.session_state:
         st.session_state["quota_remaining"] = 0
 
     if not st.session_state["authenticated"]:
         with st.form("password_form"):
             password_input = st.text_input("🔐 Enter password to use assistant:", type="password")
-            submit_pw = st.form_submit_button("Submit")
-            if submit_pw:
-                if password_input in allowed_passwords:
-                    st.session_state["authenticated"] = True
-                    st.session_state["password"] = password_input
-                    st.session_state["quota_remaining"] = allowed_passwords[password_input]
-                    st.success(f"✅ Access granted. You have {allowed_passwords[password_input]} queries.")
-                else:
-                    st.error("❌ Invalid password. Please try again.")
-        st.stop()
+            submit_pw = st.form_submit_button("Submit", type="primary") 
+        if submit_pw:
+            if password_input in allowed_passwords:
+                st.session_state["authenticated"] = True
+                st.session_state["password"] = password_input
+                st.session_state["quota_remaining"] = allowed_passwords[password_input]
+                st.success(f"✅ Access granted. You have {allowed_passwords[password_input]} queries.")
+                st.rerun()  # 👈 rerun to show the full interface
+            else:
+                st.error("❌ Invalid password. Please try again.")
+        st.stop()  # 👈 Only stop if still unauthenticated
+
 
     # --- If quota is exhausted, show error
     if st.session_state["quota_remaining"] <= 0:
@@ -203,7 +210,8 @@ elif page == "GPT Q&A":
         st.session_state["trigger_submit"] = False
         with st.spinner("Thinking..."):
             try:
-                response = openai.ChatCompletion.create(
+                client = OpenAI(api_key=api_key)
+                response = client.chat.completions.create(
                     model="gpt-3.5-turbo",
                     messages=[
                         {"role": "system", "content": "You are a helpful assistant for project managers trying to understand technical concepts."},
