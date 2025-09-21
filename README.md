@@ -1,3 +1,5 @@
+[![Streamlit App](https://img.shields.io/badge/Live%20App-Streamlit-purple?logo=streamlit)](https://ai-for-pms-assistant-ascqbepwymm6szh5jobz82.streamlit.app/)
+
 ai-for-pms-assistant
 A practical AI-powered tool that helps project managers understand tech concepts in context
  AI for PMs Assistant
@@ -15,7 +17,7 @@ This is my personal project to showcase:
 
 🔍 Demo
 
-📹 [Watch Demo Video](#)  
+🌐 [Live App on Streamlit Cloud](https://ai-for-pms-assistant-ascqbepwymm6szh5jobz82.streamlit.app/)
 📝 [Confluence Page](#)  
 🗂️ [Jira Backlog (sample board)](#)
 
