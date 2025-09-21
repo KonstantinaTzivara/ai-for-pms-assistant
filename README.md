@@ -60,6 +60,23 @@ Built using:
 
 ---
 
+## 🔐 GPT Q&A Module (New Feature)
+
+This assistant helps project managers understand technical concepts using GPT-3.5.
+
+Access is password-protected. Each password allows **up to 10 GPT queries**.
+
+📌 To test the assistant:
+- Go to the **GPT Q&A** page
+- Enter a temporary password (provided on request)
+- Start asking questions
+
+Note: The `allowed_passwords.json` file is **excluded from the repo** for security reasons.
+
+---
+
+---
+
  📁 File Structure
 
 ```bash
